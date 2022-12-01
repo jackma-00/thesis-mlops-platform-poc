@@ -2,11 +2,12 @@
 The platform contains the following components as described by the architecture diagram.
 ![image](https://user-images.githubusercontent.com/91907141/200011595-a9502ccb-487a-41c8-a747-9babd67bc7c1.png)
 
-## MLOps level 0: manual process, plus model monitoring
-![image](https://user-images.githubusercontent.com/91907141/200011708-b7f5297b-9ecf-40e3-a3ed-4c196e47360b.png)
-- Collection of objective and timely metrics to determine the quality of models in production.
-- In the event that problems are identified, the (manual) process of data analysis and train of a new model must be restarted.
-- Monitoring can identify several opportunities for improvement.
+## MLOps level 1: continuous training
+![image](https://user-images.githubusercontent.com/91907141/205116728-45cb827d-0563-4ff5-9ec0-9106abc3ff74.png)
+- You go from deploying a model to deploying a pipeline that automatically trains models.
+- It allows to accelerate the experimentation of different models (e.g., trained on different data).
+- Operational symmetry: The same pipeline (same code) can be used in both production and development environments.
+- Forces modularization of pipeline components and allows them to be developed and replaced independently.
 
 ## MLflow
 This project largely uses MLflow, which enables the management of the ML life cycle, from iteration on model development up to deployment in a reliable and scalable environment.
