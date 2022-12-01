@@ -89,8 +89,8 @@ if __name__ == "__main__":
 
         classification_performance = Dashboard(tabs=[ClassificationPerformanceTab(verbose_level=1)])
         classification_performance.calculate(reference_X_test, production_X_test)
-        classification_performance.save("model_drift.html")
-        mlflow.log_artifact("model_drift.html")
+        classification_performance.save("reports/model-drift/model_drift.html")
+        mlflow.log_artifact("reports/model-drift/model_drift.html")
 
         # Saving status [trigger_retrain | hold]
         with open('status/status.json', 'w') as file:
