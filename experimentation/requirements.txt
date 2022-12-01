@@ -1,0 +1,6 @@
+hydra-core==1.2.0
+omegaconf==2.2.3
+pandas
+numpy
+scikit-learn==1.0.2 
+mlflow==1.29.0

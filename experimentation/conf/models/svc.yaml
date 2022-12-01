@@ -1,0 +1,6 @@
+model: SVC
+
+hyperparameters:
+  C: [1e-5, 1e-4, 1e-3, 1e-2, 1, 1e1, 1e2, 1e3]
+  gamma: [1e-5, 1e-4, 1e-3, 1e-2, 1, 1e1, 1e2, 1e3]
+  kernel: ['linear', 'rbf']

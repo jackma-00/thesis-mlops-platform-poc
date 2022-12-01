@@ -1,0 +1,4 @@
+model: GaussianNB
+
+hyperparameters:
+  var_smoothing: [1e-9, 1e-6,1e-3, 1, 1e1, 1e3, 1e6]

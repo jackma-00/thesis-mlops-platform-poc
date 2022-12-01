@@ -1,0 +1,5 @@
+model: DecisionTreeClassifier
+
+hyperparameters:
+  max_depth: [10, 100, 1000]
+  criterion: ['gini', 'entropy']

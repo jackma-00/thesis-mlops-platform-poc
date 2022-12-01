@@ -1,0 +1,12 @@
+# Ingore logs
+logs/
+
+# Ignore database
+airflow.db
+
+# Ignore password
+standalone_admin_password.txt
+
+# ignore configurations 
+airflow.cfg
+webserver_config.py 

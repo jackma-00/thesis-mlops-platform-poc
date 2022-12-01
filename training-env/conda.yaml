@@ -1,0 +1,15 @@
+name: training_infrastructure
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - xgboost
+  - cloudpickle
+  - matplotlib
+  - pip:
+      - mlflow
+      - sklearn

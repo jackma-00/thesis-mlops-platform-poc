@@ -1,0 +1,8 @@
+name: deployment_and_inference_environment
+
+conda_env: conda.yaml
+
+entry_points:
+
+  main:
+    command: "python inference_api.py"

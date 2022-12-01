@@ -1,0 +1,15 @@
+name: monitoring_layer
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy
+  - scipy
+  - pandas
+  - xgboost
+  - cloudpickle
+  - matplotlib
+  - pip
+  - pip:
+    - mlflow
+    - evidently

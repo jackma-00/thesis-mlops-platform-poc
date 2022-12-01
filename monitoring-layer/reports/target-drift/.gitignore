@@ -1,0 +1,3 @@
+# Ignore reports 
+target_drift.html
+target_drift.json

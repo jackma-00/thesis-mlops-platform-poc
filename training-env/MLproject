@@ -1,0 +1,20 @@
+name: training_infrastructure
+
+conda_env: conda.yaml
+
+entry_points:
+
+  train_model:
+    command: "python train_model.py"
+
+  evaluate_model:
+    command: "python evaluate_model.py "
+
+  register_model:
+    parameters:
+      model_uri: {type: str}
+      model_name: {type: str}
+    command: "python register_model.py {model_uri} {model_name}"
+
+  main:
+    command: "python main.py"

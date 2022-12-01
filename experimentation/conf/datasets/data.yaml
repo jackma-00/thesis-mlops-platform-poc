@@ -1,0 +1,3 @@
+dataset: data
+
+path: ${hydra:runtime.cwd}/../data-layer/data/training/data.csv

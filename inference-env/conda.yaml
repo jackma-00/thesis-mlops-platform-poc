@@ -1,0 +1,17 @@
+name: deployment_and_inference_environment
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - xgboost
+  - cloudpickle
+  - matplotlib
+  - flask
+  - pip:
+      - mlflow
+      - sklearn
+      - flasgger

@@ -1,0 +1,15 @@
+name: data_and_feature_management
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy
+  - scipy
+  - pandas
+  - cloudpickle
+  - pip
+  - pip:
+    - mlflow
+    - pandas_datareader
+    - great_expectations
+    - pandas_profiling
