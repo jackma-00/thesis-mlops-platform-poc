@@ -1,4 +1,4 @@
-export AIRFLOW_HOME=~/Documents/internship/content/projects/mlops-platform/workflow/
+export AIRFLOW_HOME=~/Documents/internship/content/projects/thesis-mlops-platform-poc/workflow/
 
 default: start
 

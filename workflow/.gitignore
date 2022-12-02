@@ -7,6 +7,9 @@ airflow.db
 # Ignore password
 standalone_admin_password.txt
 
-# ignore configurations 
+# Ignore configurations 
 airflow.cfg
 webserver_config.py 
+
+# Ignore pid
+airflow-webserver.pid
