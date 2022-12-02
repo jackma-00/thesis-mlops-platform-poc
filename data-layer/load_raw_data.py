@@ -22,12 +22,12 @@ if __name__ == "__main__":
         mlflow.set_tag("mlflow.runName", "load_raw_data")
         
         # Referring to current data
-        #end = date.today()
-        #start = end + relativedelta(months=-3)
+        end = date.today()
+        start = end + relativedelta(months=-3)
 
         # Referring to older data
-        start = date.fromisoformat('2020-04-03')
-        end = date.fromisoformat('2020-09-01')
+        #start = date.fromisoformat('2020-04-03')
+        #end = date.fromisoformat('2020-09-01')
 	
         df = web.DataReader("BTC-USD", 'yahoo', start, end, session=sesh)
 
