@@ -13,13 +13,13 @@ The platform contains the following components as described by the architecture 
 This project largely uses MLflow, which enables the management of the ML life cycle, from iteration on model development up to deployment in a reliable and scalable environment.
 https://www.mlflow.org/docs/latest/index.html
 
+## Airflow
+Apache Airflow is used to orchestrate the ML pipelines.   
+https://airflow.apache.org/docs/apache-airflow/stable/
+
 ## How to run the platform
-Step into the server directory:
-```
-cd tracking-server
-```
-Start the environment:
+To start the automated process:
 ```
 make
 ```
-Now you can follow the ML end-to-end pipeline stepping in the corresponding directories and utilizing the make files.
+
