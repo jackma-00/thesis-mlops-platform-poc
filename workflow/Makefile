@@ -6,4 +6,4 @@ start:
 	airflow standalone
 
 trigger:
-	airflow dags trigger training_pipeline
+	airflow dags trigger retrain_trigger
