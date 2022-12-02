@@ -44,10 +44,5 @@ with DAG(
         task_id='join',
         trigger_rule=TriggerRule.NONE_FAILED_MIN_ONE_SUCCESS,
     )
-
-    serve = BashOperator(
-    task_id='serve',
-    bash_command='cd /home/jacopo/Documents/internship/content/projects/thesis-mlops-platform-poc/inference-env/ && make',
-    )
     
-    model_monitoring >> branching >> [trigger_retrain, hold] >> join >> serve
+    model_monitoring >> branching >> [trigger_retrain, hold] >> join
