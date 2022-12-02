@@ -23,7 +23,7 @@ with DAG(
 
     model_monitoring = BashOperator(
     task_id='model_monitoring',
-    bash_command='cd /home/jacopo/Documents/internship/content/projects/mlops-platform/monitoring-layer/ && make',
+    bash_command='cd /home/jacopo/Documents/internship/content/projects/thesis-mlops-platform-poc/monitoring-layer/ && make',
     )
 
     branching = BranchPythonOperator(
@@ -47,7 +47,7 @@ with DAG(
 
     serve = BashOperator(
     task_id='serve',
-    bash_command='cd /home/jacopo/Documents/internship/content/projects/mlops-platform/inference-env/ && make',
+    bash_command='cd /home/jacopo/Documents/internship/content/projects/thesis-mlops-platform-poc/inference-env/ && make',
     )
     
     model_monitoring >> branching >> [trigger_retrain, hold] >> join >> serve

@@ -37,13 +37,13 @@ dag = DAG(
 # Instantiate tasks using Operators
 data_processing = BashOperator(
     task_id='data_processing',
-    bash_command='cd /home/jacopo/Documents/internship/content/projects/mlops-platform/data-layer/ && make',
+    bash_command='cd /home/jacopo/Documents/internship/content/projects/thesis-mlops-platform-poc/data-layer/ && make',
     dag=dag,
 )
 
 model_training = BashOperator(
     task_id='model_training',
-    bash_command='cd /home/jacopo/Documents/internship/content/projects/mlops-platform/training-env/ && make',
+    bash_command='cd /home/jacopo/Documents/internship/content/projects/thesis-mlops-platform-poc/training-env/ && make',
     dag=dag,
 )
 

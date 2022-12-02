@@ -39,8 +39,17 @@ def predict_note_file():
             description: The output values
 
     """
+    # Retrieve the input data
     df_test = pd.read_csv(request.files.get("file"), header=None, names=["{}".format(i) for i in range(0, 14)])
     print(df_test.head())
+
+    # Save data from production to monitor
+    df_test.to_csv("../data-layer/data/scoring/input.csv", index=False, header=False)
+
+    # Log data from production 
+    mlflow.log_artifact("../data-layer/data/scoring/input.csv")
+    
+    # Predict on production data
     y_probas = model.predict(df_test)
     y_preds = [1 if  y_proba > 0.5 else 0 for y_proba in y_probas]
 
